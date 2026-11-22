@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Driftless Farm — A Wisconsin Farm Chronicle</title>
+  <link rel="stylesheet" href="css/fonts.css?v=2.1">
+  <link rel="stylesheet" href="css/style.css?v=2.1">
+</head>
+<body>
+  <div id="app" class="titlemode">
+    <header id="topbar">
+      <div class="brand"><span>The</span> Driftless Farm</div>
+      <div id="townSign" class="town-sign" role="img" aria-label="Your homestead"><b></b><small></small><em></em></div>
+      <div id="stats"></div>
+      <div class="tools">
+        <button id="helpBtn" title="Farmer's Almanac (help)">Almanac</button>
+        <button id="saveBtn" title="Save your progress (Ctrl+S)">Save</button>
+        <button id="loadBtn" title="Load a saved game">Load</button>
+        <button id="muteBtn" title="Sound on/off">Sound: on</button>
+        <button id="newBtn" title="Start over">New</button>
+      </div>
+    </header>
+    <main>
+      <section id="stage">
+        <canvas id="scene" width="960" height="540"></canvas>
+        <div id="banner"></div>
+        <div id="logWrap">
+          <div class="logbar"><span>History</span><span><button id="logMin" title="Minimize the history">&#8211;</button><button id="logBig" title="Enlarge the history">&#10530;</button></span></div>
+          <div id="log"></div>
+        </div>
+      </section>
+      <aside id="panel">
+        <nav id="tabs"></nav>
+        <div id="tabBody"></div>
+        <div id="actionBar"><button id="goBtn" class="primary big">Plant &amp; Begin the Season</button></div>
+      </aside>
+    </main>
+  </div>
+
+  <div id="cheat" class="hidden">
+    <div class="cheat-head"><b>Cheat &amp; Test Console</b><button id="cheatClose">&times;</button></div>
+    <input id="cheatIn" placeholder="Type a code (HELP lists them) and press Enter" autocomplete="off" spellcheck="false">
+    <div id="cheatQuick"></div>
+    <pre id="cheatOut"></pre>
+  </div>
+
+  <script src="js/data.js?v=2.1"></script>
+  <script src="js/sim.js?v=2.1"></script>
+  <script src="js/asset-manifest.js?v=2.1"></script>
+  <script src="js/assets.js?v=2.1"></script>
+  <script src="js/art.js?v=2.1"></script>
+  <script src="js/ui.js?v=2.1"></script>
+</body>
+</html>
